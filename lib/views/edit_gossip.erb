@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Editer un potin</title>
+  </head>
+  <body>
+    <% y=x.to_i %>
+  <% y=y-1 %>
+    <h1>Editer un potin !</h1>
+    <p>BModifie ton potin via le formulaire ci-dessous</p>
+    <form action='/gossips/<%= x %>/edit/' method='POST'>
+      Balance ton blase : <input type='text' name='gossip_author' value="<%= gossips[y].author %>" /><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value="<%= gossips[y].content %>" /><br/>
+      <input type='submit'/>
+       <a href="/">Annuler</a>
+    </form>
+
+  </body>
+</html>

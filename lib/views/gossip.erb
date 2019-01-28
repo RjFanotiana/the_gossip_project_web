@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>The Gossip Project</title>
+</head>
+<body>
+
+	le potin corespondant de <%= x %></br><a href="/gossips/<%= x %>/edit/">edit</a>
+	</br>
+	<% y=x.to_i %>
+	<% y=y-1 %>
+	 author: <%= gossips[y].author %></br></br>
+	 content: <%= gossips[y].content %></br></br>
+	 <a href="/">Home</a>
+
+
+</body>
+</html>
